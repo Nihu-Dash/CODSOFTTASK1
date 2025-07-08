@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg,white,rgb(90, 174, 119),white);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about, .projects,.certificate ,.contact {
+      margin-bottom: 40px;
+    }
+
+    img{
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20%;
+      height: 40%;    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2c5364;
+    }
+
+    .projects .project-card {
+      background: linear-gradient(white,pink);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .projects .project-card:hover{
+      background: linear-gradient(white,cyan);
+    }
+    
+    .certificate .certificatee{
+      background: linear-gradient(white,pink);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    }
+
+    .certificate .certificatee:hover{
+      background: linear-gradient(white,cyan);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px;
+      background:linear-gradient(white,pink);
+      color: black;
+      weight:700;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: linear-gradient(#2c5364);
+      color:white;
+      weight:700;
+    }
+
+    footer {
+      background: #2c5364;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Niharika Dash</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificate">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="nehu.jpg" alt="Neha image">
+    <p>Hello! I’m Niharika Dash, i'm currently pursuing MCA at Rourkela Institute Of Management Studies(RIMS), a passionate Front-End Developer with experience in building responsive web applications.
+       I love working with HTML, CSS, and JavaScript to create beautiful, user-friendly interfaces.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A sleek personal portfolio built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>A dynamic weather forecasting app using the OpenWeatherMap API and real-time data.</p>
+    </div>
+  </section>
+
+  <section id="certificate" class="certificate">
+    <h2>Certificate</h2>
+    <div class="certificatee">
+      <h3>HP LIFE</h3>
+      <p>AI for beginners</p>
+    </div>
+    <div class="certificatee">
+      <h3>TCSion</h3>
+      <p>Skill Enhancement</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Niharika Dash | Portfolio</p>
+  </footer>
+
+</body>
+</html>
